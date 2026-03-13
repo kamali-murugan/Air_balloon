@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inishowen Hot Air Balloon Flights - Flights</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="air_balloon.css">
+</head>
+<body>
+
+<div class="page">
+  <div class="header-box">
+
+    <div class="logo-area">
+      <img src="logo.png" alt="Company Logo">
+
+      <div>
+        <h1>Inishowen Hot Air Balloon Flights</h1>
+        <p class="slogan">“See Donegal from a whole new height.”</p>
+      </div>
+    </div>
+    
+
+    <div class="menu-bar">
+      <table class="menu-table">
+        <tr>
+          <td><a href="index.html">Home</a></td>
+          <td><a href="flight.html">Flights</a></td>
+          <td><a href="booking.html">Booking</a></td>
+          <td><a href="contact.html">Contact</a></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
+<main class="container">
+
+  <div class="card">
+    <img src="Photo 3.png" alt="Inishowen Hot Air Balloon Flights Banner" style="width:100%; border-radius:6px;">
+  </div>
+
+  <div class="card">
+    <h2 class="fancy-title">Flight Information</h2>
+    <p>
+      Welcome to Inishowen Hot Air Balloon Flights. Click the items on the left to see the details about flights,
+      weather, ticket types, offers, and safety.
+    </p>
+
+    <div class="split-card">
+      <div class="split-left">
+        <p onclick="showFlightDetail('weather')" class="menu-link">Best weather for flying</p>
+        <p onclick="showFlightDetail('experience')"class="menu-link">Flight experience</p>
+        <p onclick="showFlightDetail('tickets')"class="menu-link">Ticket types</p>
+        <p onclick="showFlightDetail('offers')" class="menu-link">Special offers</p>
+        <p onclick="showFlightDetail('safety')" class="menu-link">Safety preparations</p>
+      </div>
+
+      <div class="split-right" id="flightDetail">
+        <h2 class="fancy-title">Flight Information</h2>
+        <p>
+          Welcome to Inishowen Hot Air Balloon Flights. Click the items on the left
+          to see the details about flights, weather, ticket types, offers, and safety.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2 class="fancy-title">Gallery</h2>
+    <div class="photo-row">
+      <img src="Photo 5.png" alt="Balloon Photo 1">
+      <img src="Photo 4.jpg" alt="Balloon Photo 2">
+    </div>
+  </div>
+
+  <div class="card">
+    <h2 class="fancy-title">Our Location</h2>
+    <p>Our balloon flights take place in the beautiful Inishowen area of County Donegal.</p>
+
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9102.582046195446!2d-7.9822222!3d55.2244439!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x485f89da22e71111%3A0x64d90a1c834beca2!2sHorn%20Head!5e0!3m2!1sen!2sie!4v1773401218302!5m2!1sen!2sie"
+        width="100%"
+        height="350"
+        style="border:0; border-radius:6px;"
+        allowfullscreen=""
+        loading="lazy">
+    </iframe>
+  </div>
+
+</main>
+
+<footer>
+  <div class="container">
+    <p>© Inishowen Hot Air Balloon Flights</p>
+  </div>
+</footer>
+
+<script>
+  function showFlightDetail(type) {
+    let content = "";
+
+    if (type === "weather") {
+      content = `
+        <h2 class="fancy-title">Best Weather for Flying</h2>
+        <p>Balloon flights need light wind, dry weather, and good visibility.</p>
+        <p>Heavy rain, strong wind, or thick fog are not suitable for flights.</p>
+        <p>The best flying time is usually early morning or evening.</p>
+      `;
+    }
+
+    if (type === "experience") {
+      content = `
+        <h2 class="fancy-title">Flight Experience</h2>
+        <p>The full experience takes around 2 to 3 hours including preparation, take-off, flight, and landing.</p>
+        <p>The actual balloon ride lasts around 45 minutes to 1 hour.</p>
+        <p>You will enjoy a calm and peaceful journey in the sky.</p>
+      `;
+    }
+
+    if (type === "tickets") {
+      content = `
+        <h2 class="fancy-title">Ticket Types</h2>
+        <p><b>Adult Ticket:</b> Standard single adult ticket.</p>
+        <p><b>Children Ticket:</b> For children aged 7 and above.</p>
+        <p><b>Family Ticket:</b> Best for parents and children booking together.</p>
+        <p><b>Group Ticket:</b> Good for friends or small groups.</p>
+      `;
+    }
+
+    if (type === "offers") {
+      content = `
+        <h2 class="fancy-title">Special Offers</h2>
+        <p><b>Sunrise Flight Experience:</b> Early morning balloon ride with calm skies.</p>
+        <p><b>Couples Celebration Package:</b> Great for birthdays and anniversaries.</p>
+        <p><b>Family Adventure Package:</b> Shared family balloon experience.</p>
+        <p><b>Group Discount Flights:</b> Better value for group bookings.</p>
+      `;
+    }
+
+    if (type === "safety") {
+      content = `
+        <h2 class="fancy-title">Safety Preparations</h2>
+        <p>Wear comfortable clothes and flat shoes.</p>
+        <p>Not recommended for pregnant travellers or people with serious back problems.</p>
+        <p>Children must be at least 7 years old.</p>
+        <p>One balloon can carry up to 6 passengers.</p>
+      `;
+    }
+
+    document.getElementById("flightDetail").innerHTML = content;
+  }
+</script>
+
+</body>
+</html>

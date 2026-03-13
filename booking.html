@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inishowen Hot Air Balloon Flights - Booking & Contact</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="air_balloon.css">
+</head>
+<body>
+
+<div class="page">
+
+  <div class="header-box">
+    <div class="logo-area">
+      <img src="logo.png" alt="Company Logo">
+      <div>
+        <h1>Booking & Contact</h1>
+        <p class="slogan">“Plan your balloon adventure in Donegal.”</p>
+      </div>
+    </div>
+
+    <div class="menu-bar">
+      <table class="menu-table">
+        <tr>
+          <td><a href="index.html">Home</a></td>
+          <td><a href="flight.html">Flights</a></td>
+          <td><a href="booking.html">Booking</a></td>
+          <td><a href="contact.html">Contact</a></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <main>
+
+   
+    <div class="card booking-menu-card">
+      <div class="booking-top-menu">
+        <button type="button" class="booking-tab" onclick="toggleSection('flightForm')">Book Your Flight</button>
+        <button type="button" class="booking-tab" onclick="toggleSection('bookingInfo')">Booking Info</button>
+      </div>
+
+      <div id="flightForm" class="dropdown-section">
+        <h2 class="fancy-title">Book Your Flight</h2>
+        <p>
+          Choose your preferred flight date, time, ticket type, and package.
+          Final flight confirmation always depends on safe weather conditions.
+        </p>
+
+        <form>
+          <label for="fullname"><b>Full Name:</b></label><br>
+          <input type="text" id="fullname" name="fullname" placeholder="Enter your name" required><br><br>
+
+          <label for="email"><b>Email:</b></label><br>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+          <label for="phone"><b>Phone Number:</b></label><br>
+          <input type="tel" id="phone" name="phone" placeholder="Enter your phone number"><br><br>
+
+          <label for="date"><b>Select Flight Date:</b></label><br>
+          <input type="date" id="date" name="date" required><br><br>
+
+          <label for="time"><b>Select Flight Time:</b></label><br>
+          <select id="time" name="time">
+            <option value="">Choose a time</option>
+            <option value="sunrise">Sunrise Flight - 6:00 AM</option>
+            <option value="morning">Morning Flight - 9:00 AM</option>
+            <option value="evening">Evening Flight - 5:00 PM</option>
+          </select><br><br>
+
+          <label for="tickettype"><b>Ticket Type:</b></label><br>
+          <select id="tickettype" name="tickettype">
+            <option value="">Choose ticket type</option>
+            <option value="adult">Adult Ticket</option>
+            <option value="child">Children Ticket</option>
+            <option value="group">Group Ticket</option>
+            <option value="family">Family Ticket</option>
+          </select><br><br>
+
+          <label for="tickets"><b>Number of Tickets:</b></label><br>
+          <select id="tickets" name="tickets">
+            <option value="1">1 Ticket</option>
+            <option value="2">2 Tickets</option>
+            <option value="3">3 Tickets</option>
+            <option value="4">4 Tickets</option>
+            <option value="5">5 Tickets</option>
+            <option value="6">6 Tickets</option>
+          </select><br><br>
+
+          <label for="package"><b>Offers & Packages:</b></label><br>
+          <select id="package" name="package">
+            <option value="">Choose a package</option>
+            <option value="standard">Standard Flight Package</option>
+            <option value="couple">Couple Special Offer</option>
+            <option value="family">Family Package</option>
+            <option value="group">Group Booking Offer</option>
+            <option value="sunrise">Sunrise Experience Package</option>
+          </select><br><br>
+
+          <label for="message"><b>Special Request:</b></label><br>
+          <textarea id="message" name="message" rows="5" placeholder="Write your message here"></textarea><br><br>
+
+          <button type="submit">Send Booking Request</button>
+        </form>
+      </div>
+
+      <div id="bookingInfo" class="dropdown-section">
+        <h2 class="fancy-title">Booking Info</h2>
+        <p><b>Flight Duration:</b> Around 45 minutes to 1 hour.</p>
+        <p><b>Total Experience:</b> Around 2 to 3 hours including preparation and landing.</p>
+        <p><b>Best Weather:</b> Light wind, dry weather, and good visibility.</p>
+        <p><b>Dress Code:</b> Comfortable clothes, flat shoes, and warm layers.</p>
+        <p><b>Health Advice:</b> Not recommended for pregnant travellers or people with serious back problems.</p>
+        <p><b>Minimum Age:</b> Children should be at least 7 years old.</p>
+        <p><b>Balloon Capacity:</b> Up to 6 people in one balloon.</p>
+        <p><b>Note:</b> Final confirmation depends on safe weather conditions.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2 class="fancy-title">Contact Details</h2>
+      <p><b>Phone:</b> +353 74 123 4567</p>
+      <p><b>Email:</b> info@inishowenballoons.ie</p>
+      <p><b>Location:</b> Inishowen, Donegal, Ireland</p>
+    </div>
+
+  </main>
+
+</div>
+
+<script>
+  function toggleSection(sectionId) {
+    const sections = document.querySelectorAll(".dropdown-section");
+
+    sections.forEach(function(section) {
+      if (section.id === sectionId) {
+        if (section.style.display === "block") {
+          section.style.display = "none";
+        } else {
+          section.style.display = "block";
+        }
+      } else {
+        section.style.display = "none";
+      }
+    });
+  }
+</script>
+
+</body>
+</html>

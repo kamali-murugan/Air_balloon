@@ -1,0 +1,346 @@
+/* ---------- BODY ---------- */
+body{
+    margin:0;
+    font-family:"Segoe UI", Tahoma, Arial, sans-serif;
+    background-color:#f2f6f9;
+    color:#222;
+}
+
+/* ---------- CONTAINER ---------- */
+.container{
+    width:90%;
+    max-width:1000px;
+    margin:auto;
+}
+
+/* ---------- HEADER ---------- */
+header{
+    background: linear-gradient(to right, #1e73be, #5fa9dd);
+    color:white;
+    padding:16px 0 10px 0;
+}
+
+header h1{
+    letter-spacing:1px;
+    margin:0;
+    font-size:32px;
+}
+
+.slogan{
+    margin:4px 0 0 0;
+    font-style:italic;
+    color:#e8f3ff;
+}
+
+/* ---------- LOGO AREA ---------- */
+.logo-area{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.logo-area img{
+    width:55px;
+    height:55px;
+    border-radius:8px;
+    border:1px solid #ddd;
+}
+
+/* ---------- NAVIGATION ---------- */
+nav{
+    margin-top:15px;
+}
+
+nav table{
+    width:100%;
+    background-color:rgba(255,255,255,0.2);
+    border-radius:6px;
+}
+
+nav td{
+    text-align:center;
+    padding:10px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+nav td:hover{
+    background-color:rgba(255,255,255,0.3);
+}
+
+/* ---------- FANCY TITLE ---------- */
+.fancy-title{
+    font-family:'Pacifico', cursive;
+    color:#1e73be;
+    font-size:40px;
+}
+
+/* ---------- BANNER ---------- */
+.banner{
+    width:100%;
+    border-radius:10px;
+    margin-top:15px;
+}
+
+/* ---------- CONTENT CARDS ---------- */
+.card{
+    background:white;
+    padding:20px;
+    margin:20px 0;
+    border-radius:8px;
+    box-shadow:0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* ---------- PHOTO ROW ---------- */
+.photo-row{
+    display:flex;
+    gap:10px;
+}
+
+.photo-row img{
+    width:50%;
+    border-radius:6px;
+}
+
+/* ---------- INFO BOX ---------- */
+.infoBox{
+    background:white;
+    border:2px solid #1e73be;
+    padding:14px;
+    border-radius:8px;
+    margin-bottom:14px;
+    cursor:pointer;
+}
+
+.infoBox h2{
+    margin:0;
+    font-size:24px;
+    color:#1e73be;
+    font-family:'Pacifico', cursive;
+}
+
+.infoContent{
+    display:none;
+    margin-top:12px;
+    color:#333;
+}
+
+.infoBox:hover{
+    background:#f4f9ff;
+}
+
+.infoBox:hover .infoContent{
+    display:block;
+}
+
+/* ---------- BUTTON ---------- */
+button{
+    background:#1e73be;
+    color:white;
+    border:none;
+    padding:10px 18px;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#145a94;
+}
+
+/* ---------- FOOTER ---------- */
+footer{
+    text-align:center;
+    padding:15px;
+    color:#555;
+}
+
+/* ---------- FORM ---------- */
+input, select, textarea{
+    width:100%;
+    padding:10px;
+    border:1px solid #bbb;
+    border-radius:6px;
+    box-sizing:border-box;
+    font-size:16px;
+}
+
+label{
+    color:#1e73be;
+}
+
+form{
+    margin-top:15px;
+}
+
+/* ---------- MAIN NAV FOR OTHER PAGES ---------- */
+.main-nav{
+    margin-top:15px;
+    background-color:rgba(255,255,255,0.2);
+    border-radius:6px;
+    padding:12px;
+    text-align:center;
+}
+
+.main-nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    margin:0 25px;
+}
+
+.main-nav a:hover{
+    text-decoration:underline;
+}
+
+/* ---------- SPLIT LAYOUT ---------- */
+.split-card{
+    display:flex;
+    gap:0;
+    padding:0;
+    overflow:hidden;
+}
+
+.split-left{
+    width:35%;
+    padding:25px;
+    background:#f8fbff;
+    border-right:1px solid #d6e4f0;
+}
+
+.split-left p{
+    margin:0 0 16px 0;
+    cursor:pointer;
+    color:#1e73be;
+    font-family:'Pacifico', cursive;
+    font-size:24px;
+    font-weight:normal;
+}
+
+.split-left p:hover{
+    color:#145a94;
+}
+
+.split-right{
+    width:65%;
+    padding:25px;
+}
+
+.split-right h2{
+    margin-top:0;
+}
+
+.split-right input,
+.split-right select,
+.split-right textarea{
+    width:100%;
+    padding:10px;
+    border:1px solid #c9d6e2;
+    border-radius:6px;
+    box-sizing:border-box;
+    font-size:16px;
+}
+.menu-link{
+    margin:0 0 16px 0;
+    cursor:pointer;
+    color:#1e73be;
+    font-size:18px;
+    font-weight:bold;
+    font-family:"Segoe UI", Tahoma, Arial, sans-serif;
+}
+
+.menu-link:hover{
+    color:#145a94;
+    text-decoration:underline;
+}
+.nav-space{
+    margin-top:24px;
+    margin-bottom:22px;
+}
+
+.menu-bar{
+    width:100%;
+    margin-top:15px;
+}
+
+.menu-table{
+    width:100%;
+    max-width:1000px;
+    margin:auto;
+    text-align:center;
+    background:white;
+    border-radius:8px;
+    border-collapse:collapse;
+    box-shadow:0 2px 6px rgba(0,0,0,0.1);
+}
+
+.menu-table td{
+    width:25%;
+    padding:0;
+    border-right:1px solid #e3e7ed;
+}
+
+.menu-table td:last-child{
+    border-right:none;
+}
+
+.menu-table a{
+    display:block;
+    padding:16px 10px;
+    text-decoration:none;
+    font-weight:bold;
+    color:#1e73be;
+}
+
+.menu-table a:hover{
+    background:#428bf1;
+    color:white;
+}
+.header-box{
+    max-width:1000px;
+    margin:30px auto 10px auto;
+    padding:20px 25px;
+    background: linear-gradient(to right, #1e73be, #5fa9dd);
+    border-radius:12px;
+    color:white;
+    box-shadow:0 3px 10px rgba(0,0,0,0.15);
+}
+
+.header-box h1{
+    margin:0;
+    font-size:32px;
+}
+
+.header-box .slogan{
+    margin-top:4px;
+    color:#e8f3ff;
+}
+
+.menu-bar{
+    margin-top:18px;
+}
+.page{
+    max-width:1000px;
+    margin:30px auto;
+}
+.booking-tab{
+    background:white;
+    border:2px solid #1e73be;
+    padding:12px 25px;
+    border-radius:8px;
+    cursor:pointer;
+
+    font-family:'Pacifico', cursive;
+    font-size:28px;
+    color:#1e73be;
+
+    transition:0.3s;
+}
+
+.booking-tab:hover{
+    background:#1e73be;
+    color:white;
+}
